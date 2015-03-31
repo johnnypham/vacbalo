@@ -793,6 +793,7 @@ background: #fec01c;
   padding-right: 350px;
 }
 .fitter-mini{
+    z-index: 99999;
     position: fixed;
 overflow:auto;
   background: #5d5d5d;
@@ -826,7 +827,7 @@ overflow:auto;
 position: fixed;
   left: 100px;
   top: 60px;
-    z-index: 99;
+    z-index: 9999;
   background: #fff;
   width: 500px;
   height: 100%;
@@ -922,6 +923,7 @@ min-height: 40px
   background-color: #f7f7f7;
   border: none;
   height: 31px;
+  float: left;
 }
 .left-fitter-dropdown{
   margin-right: 20px

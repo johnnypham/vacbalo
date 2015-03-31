@@ -184,6 +184,111 @@ body.nav-expanded {
 }
 
 
+/**/
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+a.nav-expander {
+  background: none repeat scroll 0 0 #BEBDBD;
+  color: #000;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  margin-right: 0;
+  padding: 0px;
+  right: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 74px;
+  transition: right 0.3s ease-in-out 0s;
+  width: 112px;
+  padding: 4px 2px;
+  z-index: 12;
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+
+
+}
+
+a.nav-expanded-fitter:hover {
+  cursor: pointer;
+}
+
+a.nav-expanded-fitter.fixed {
+  position: fixed;
+}
+
+.nav-expanded a.nav-expander.fixed {
+    /*right: 20em;*/
+}
+
+.full-fitter {
+  position: fixed;
+  left: -50em;
+  top: 60px;
+  z-index: 2000;
+  
+    transition: width 0.3s ease-in-out 0s;
+  -webkit-transition: width 0.3s ease-in-out 0s;
+  -moz-transition: width 0.3s ease-in-out 0s;
+  -o-transition: width 0.3s ease-in-out 0s;
+
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+
+}
+.nav-expanded-fitter .full-fitter {
+     z-index: 9999;
+  left: 100px;
+    transition: left 0.3s ease-in-out 0s;
+  -webkit-transition: left 0.3s ease-in-out 0s;
+  -moz-transition: left 0.3s ease-in-out 0s;
+  -o-transition: left 0.3s ease-in-out 0s;
+}
+
+
+
+body.nav-expanded-fitter {
+  margin-left: 0em;
+  transition: right 0.4s ease-in-out 0s;
+  -webkit-transition: right 0.4s ease-in-out 0s;
+  -moz-transition: right 0.4s ease-in-out 0s;
+  -o-transition: right 0.4s ease-in-out 0s;
+}
+
+#nav-close {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+    position: absolute;
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
