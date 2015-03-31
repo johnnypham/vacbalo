@@ -229,13 +229,23 @@ content: 'or';
 
 }
 #resetpass input{
-    width: 250px;
+  width: 250px;
+  margin-top: 20px;
   padding: 4px;
   background: #f7f7f7;
   border: none;
   color: #fff;
   text-indent: 15px;
 }
-#resetpass a{
-   background: #fec01c;
+
+#resetpass .full-popup a{
+  background: #fec01c;
+  padding: 6px 0px;
+  width: 250px;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 20px;
+  background: #fec01c;
+  text-decoration: none;
 }
+
