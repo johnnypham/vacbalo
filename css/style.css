@@ -740,10 +740,18 @@ background: #fec01c;
   text-indent: 15px;
 
 }
+#help-hostlist,#currenty-1-hostlist,#currenty-hostlist{
+  position: relative;
+  top: -5px;
+}
+#heart{
+  position: relative;
+  top: 3px
+}
+
 .right-hostlist-menu{
   float: right;
     margin-top: 9px;
-  width: 50%;
 }
 .right-hostlist-menu ul li{
   display: inline-block;
@@ -772,6 +780,11 @@ background: #fec01c;
   color: #000;
   margin-right: 0px;
   padding: 12px 35px;
+}
+.fitter-full-title a{
+  float: right;
+  text-transform: lowercase;
+  text-decoration: underline;
 }
 .map-hostlist{
 /*   width: 100%;
@@ -929,14 +942,47 @@ min-height: 40px
   margin-right: 20px
 }
 #show-list{
-text-align: center;
+  position: fixed;
+  text-align: center;
   display: inline-block;
   width: 100%;
+  left: -9999px;
+  bottom: 5px;
 }
 #show-list a{
   padding: 8px 20px;
-  border-radius: 3px;
+  border-radius: 3px 3px 0px 0px;
   color: #fff;
   text-align: center;
-  background: #fec01c
+  position: absolute;
+  background: #fec01c;
+  top: -31px;
+  left: 353px;
+
+}
+/*Price Tour*/
+.ui-slider-horizontal{
+  height: 5px
+}
+.ui-widget-content{
+  background: #e7e7e7;
+  border: none;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+   background: #fec01c;
+  border: none;
+}
+.ui-slider-horizontal .ui-slider-handle{
+  top:-0.7rem;
+}
+#amount-min,#amount-max{
+   background: none;
+  margin-top: 10px;
+  text-align: left;
+  text-indent: 0px;
+}
+#amount-max{
+  float: right;
+  text-align: right;
+  margin-right: 0px;
 }

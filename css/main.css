@@ -271,6 +271,9 @@ body.nav-expanded-fitter {
   font-size: 24px;
   padding-right: 10px;
 }
+.nav-expanded-fitter #show-list{
+  left: -67px;
+}
 
 
 

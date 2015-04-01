@@ -19,12 +19,17 @@
 <link href="css/style.css" rel="stylesheet">
 <link href="css/popup.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+
+
+
+
+
 </head>
 <body class="page host-list">
 <!-- Header-->
 <header>
 	<!--Top Menu -->
-	<section  class="container hostlist">
+	<section class="container hostlist">
 		<!--Top Menu Left-->
 		<article class="top-nav-host left-hostlist-menu">
 			<span><img src="images/logo-hostlist.png"></span>
@@ -37,19 +42,19 @@
         			<li><a data-login="login" class="trigger"  href="#">Login</a></li>
         			<li><a data-signup="signup" class="trigger signuptrigger" href="#">Sign up</a></li>
         			<li id="heart"><span class="love"></span></li>
-        			<li class="top-cus-select position-1 style-cus">
+        			<li id="help-hostlist" class="top-cus-select position-1 style-cus">
 						<select>
 							<option value="help">Help</option>
 							<option value="help">Help</option>
 						</select>
 					</li>
-        			<li class="top-cus-select  position-2 style-cus">
+        			<li  id="currenty-hostlist" class="top-cus-select  position-2 style-cus">
 						<select>
 							<option value="vn">VN</option>
 							<option value="us">US</option>
 						</select>						
 					</li>
-					<li class="top-cus-select  position-3 style-cus">
+					<li id="currenty-1-hostlist" class="top-cus-select  position-3 style-cus">
 						<select>
 							<option value="vnd">VND</option>
 							<option value="dolar">Dolar</option>
@@ -106,9 +111,9 @@
 		</article>
 		<!-- End Fitter hostlist Small -->
 		<!-- Fitter hostlist full -->
-		<article class="full-fitter">
+		<article  class="full-fitter">
 			<article>
-				<span class='fitter-full-title'>date</span>
+				<span class='fitter-full-title'>date<a id="hide-filter" href="#">hide</a></span>
 				<input type="text" id="checkin" placeholder="check in"/>
 				<input type="text" id="checkout" placeholder="check out"/>
 			</article>
@@ -126,7 +131,11 @@
 			</article>
 			<article>
 				<span class='fitter-full-title'>Price per Night</span>
-				<input type="range"  min="0" max="100" />
+				<div id="slider-range"></div>
+				<span id="price-tour">
+					<input type="text" id="amount-min" readonly>
+					<input type="text" id="amount-max" readonly>
+				</span>
 			</article>
 			<article>
 				<span class='fitter-full-title'>Guest Number</span>
@@ -197,7 +206,7 @@
 	</section>
 	<!-- End Fitter hostlist-->
 	<!-- Main hostlist data -->
-	<section  class="main-hostlist-center container">
+	<section class="main-hostlist-center container">
 			<article class="breadcrumbs col-md-12">
 				<ol class="breadcrumb breadcrumb-left">
 				  <li><a href="#">Viet Name</a></li>
@@ -321,7 +330,7 @@
 	<!-- End Map hostlist-->
 </section>
 <!-- End Main Body -->
-<section id="map" class="map-hostlist">
+<section  id="map" class="map-hostlist">
         <article class="list-unstyled main-map">
         
 	         <section  class="map-hostlist-mini">
@@ -369,16 +378,35 @@
       		e.preventDefault();
       		$('body').toggleClass('nav-expanded');
       	});
-      	$('#more-filter').on('click',function(e){
-      		e.preventDefault();
-      		$('body').toggleClass('nav-expanded-fitter');
-      	});
+
       	$('#nav-close').on('click',function(e){
       		e.preventDefault();
       		$('body').removeClass('nav-expanded');
       	});
       	
-      	
+      	$('#more-filter').on('click',function(e){
+      		e.preventDefault();
+      		$('body').toggleClass('nav-expanded-fitter');
+      	});
+
+      	$('#hide-filter').on('click',function(e){
+      		e.preventDefault();
+      		$('body').toggleClass('nav-expanded-fitter');
+      	});
+
+      	$( "#slider-range" ).slider({
+	      range: true,
+	      min: 0,
+	      max: 500000,
+	      values: [ 10000, 400000 ],
+	      slide: function( event, ui ) {
+	        $( "#amount-min" ).val(ui.values[ 0 ]+ "d");
+	        $( "#amount-max" ).val(ui.values[ 1 ]+ "d");
+	      }
+   		 });
+   		 $( "#amount-min" ).val( $( "#slider-range" ).slider( "values", 0 )+"d" )
+   		 $( "#amount-max" ).val( $( "#slider-range" ).slider( "values", 1 )+"d" )
+   		  
       	// Initialize navgoco with default options
         $(".main-menu").navgoco({
             caret: '<span class="caret"></span>',
