@@ -986,3 +986,14 @@ min-height: 40px
   text-align: right;
   margin-right: 0px;
 }
+.breadcrumbs.map-bread{
+    width: 100%;
+  padding: 5px 10px;
+  font-size: 12px;
+  position: fixed;
+  bottom: -22px;
+  padding-right: 455px;
+}
+.breadcrumbs.map-bread,.breadcrumbs.map-bread a{
+  color: #9a9999
+}

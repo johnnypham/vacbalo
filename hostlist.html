@@ -18,11 +18,7 @@
 <link href="css/jquery-ui.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/popup.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-
-
-
-
+<link rel="stylesheet" href="css/main.css">
 
 </head>
 <body class="page host-list">
@@ -335,25 +331,34 @@
         
 	         <section  class="map-hostlist-mini">
 	         <a id="nav-expander" class="nav-expander fixed">map only</a>
-				<img src="images/map-mini.jpg">
+				
+				<article class="data-map-location-mini">
+					<img src="images/map-mini.jpg">
+				</article>
+				<a href="#" class="more-about-bottom">More about Vacbalo</a>
+			
 			</section>
 			<section class="map-hostlist-full">
-			  <a href="#" id="nav-close">X</a>
-				<img src="images/map-hostlist.jpg">
+			  <a href="#" id="nav-close" class="nav-expander fixed">Show Host List + Map</a>
+				<article class="data-map-location-full">
+					<img src="images/map-hostlist.jpg">
+				</article>
+				
+				<article class="breadcrumbs col-md-8 map-bread">
+					<ol class="breadcrumb breadcrumb-left">
+						<li><a href="#">Viet Name</a></li>
+						<li class="active"><a href="#">Dat lat city</a></li>
+						<li class="breadcrumb-right result">
+								140 properties found
+						</li>
+					</ol>
+				</article>
+				<a href="#" class="more-about-bottom">More about Vacbalo</a>
 			</section>
       </article>
 
  </section>     
-<div  style="display:none" class="navbar navbar-inverse navbar-fixed-top">      
-        
-        <!--Include your brand here-->
-        <a class="navbar-brand" href="#">Off Canvas Menu</a>
-        <div class="navbar-header pull-right">
-          <a id="nav-expander" class="nav-expander fixed">
-            MENU &nbsp;<i class="fa fa-bars fa-lg white"></i>
-          </a>
-        </div>
-    </div>
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script> 
