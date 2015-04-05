@@ -997,3 +997,16 @@ min-height: 40px
 .breadcrumbs.map-bread,.breadcrumbs.map-bread a{
   color: #9a9999
 }
+.nav-expanded-fitter .backopacity{
+    position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 999999;
+  top: 60px;
+  display: block;
+  left: 600px;
+  -webkit-transition: opacity .2s; /* Safari 3.1 to 6.0 */
+    transition: opacity .2s;
+  opacity: 0.7;
+}

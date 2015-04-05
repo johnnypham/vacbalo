@@ -71,7 +71,7 @@
 	<!-- Fitter hostlist -->
 	<section class="fitter-hostlist">
 		<!-- Fitter hostlist Small -->
-		<article class="fitter-mini">
+		<article id="more-cl" class="fitter-mini">
 			<ul>
 				<li>
 					<span>	I'm <br>
@@ -359,7 +359,7 @@
 
  </section>     
 
-
+<section class="backopacity"></section>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -389,7 +389,7 @@
       		$('body').removeClass('nav-expanded');
       	});
       	
-      	$('#more-filter').on('click',function(e){
+      	$('#more-cl').on('click',function(e){
       		e.preventDefault();
       		$('body').toggleClass('nav-expanded-fitter');
       	});
