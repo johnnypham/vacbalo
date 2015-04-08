@@ -1010,3 +1010,26 @@ min-height: 40px
     transition: opacity .2s;
   opacity: 0.7;
 }
+.pagonation{
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}.pagonation ul{
+  float: right;
+}
+.pagonation ul li:last-child{
+border:none;
+margin-right:30px;
+}
+.pagonation ul li.action-pag{
+  color: #fff;
+  background: #ddd
+}
+.pagonation ul li{
+   width: 20px;
+  float: left;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin-left: 10px;
+  color: #fec01c;
+}
