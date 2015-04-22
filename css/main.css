@@ -6,7 +6,7 @@
 
 a.nav-expander {
   background: none repeat scroll 0 0 #BEBDBD;
-  color: #000;
+  color: #615F5F;
   display: block;
   font-size: 12px;
   text-align: center;
@@ -16,7 +16,7 @@ a.nav-expander {
   text-transform: uppercase;
   top: 74px;
   transition: right 0.3s ease-in-out 0s;
-  width: 112px;
+  width: 160px;
   padding: 4px 2px;
   border-radius: 4px 0px 0px 4px;
   font-weight: bold;
@@ -221,7 +221,7 @@ a.nav-expanded-fitter.fixed {
 
 }
 .nav-expanded-fitter .full-fitter {
-     z-index: 9999;
+     z-index: 99999;
   left: 100px;
     transition: left 0.3s ease-in-out 0s;
   -webkit-transition: left 0.3s ease-in-out 0s;

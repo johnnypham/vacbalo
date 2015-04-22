@@ -806,12 +806,13 @@ background: #fec01c;
   padding-right: 350px;
 }
 .fitter-mini{
-    z-index: 99999;
+    z-index: 999999;
     position: fixed;
 overflow:auto;
   background: #5d5d5d;
   width: 100px;
   top: 60px;
+  cursor: pointer;
   left: 0px;
   min-height:100%;
     position:fixed;
@@ -830,7 +831,10 @@ overflow:auto;
 }
 .fitter-mini li:last-child{
   background: #2d2d2d;
-  color: #fff
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100px;
 }
 .fitter-mini li a{
   color: #fff
@@ -1002,10 +1006,10 @@ min-height: 40px
   width: 100%;
   height: 100%;
   background: #000;
-  z-index: 999999;
+  z-index: 9999;
   top: 60px;
   display: block;
-  left: 600px;
+  left: 100px;
   -webkit-transition: opacity .2s; /* Safari 3.1 to 6.0 */
     transition: opacity .2s;
   opacity: 0.7;
@@ -1022,7 +1026,7 @@ border:none;
 margin-right:30px;
 }
 .pagonation ul li.action-pag{
-  color: #fff;
+  color: #000;
   background: #ddd
 }
 .pagonation ul li{
