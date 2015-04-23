@@ -1037,3 +1037,22 @@ margin-right:30px;
   margin-left: 10px;
   color: #fec01c;
 }
+#blocks-items{
+  width: 100%;
+    padding: 0 15px;
+  display:inline-block;
+}
+
+.cus-res-3{
+  width: 32%;
+  display:block;
+  float: left;
+  margin: 0px
+}
+.cus-res-3.cus-center{
+  margin: 0 2%
+}
+
+/*.cus-res-3 .caption p,.cus-res-3 .caption nav{
+  text-align: center;
+}*/
