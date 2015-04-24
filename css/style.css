@@ -409,6 +409,13 @@ min-height: 300px;
   display: block;
   background: url('images/love.png');
 }
+.caption .thumbnail-mini{
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: -65px;
+  left: 15px;
+}
 .thumbnail-mini{
   display: block;
   position: absolute;
@@ -481,6 +488,7 @@ min-height: 300px;
   padding-top: 25px;
 }
 .thumbnail .caption{
+  position: relative;
   margin-top: 25px;
     padding: 9px 20px;
 }
